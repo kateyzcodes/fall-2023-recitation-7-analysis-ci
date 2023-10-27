@@ -30,3 +30,10 @@ jobs:
     steps:
       - name: Run black formatter
         uses: rickstaa/action-black@v1.3.1
+
+  test-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pytest Coverage Commentator
+        uses: coroo/pytest-coverage-commentator@v1.0.2
+            
